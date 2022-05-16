@@ -1,10 +1,17 @@
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-        sort(s.begin(),s.end());
-        sort(t.begin(),t.end());
-        
+        unordered_map<char, int> mp;
         if(s==t) return true;
-        else return false;
+        if(s.size()!=t.size())return false;
+        
+        for(char a:s){
+            mp[a]++;
+        }
+        for(char a:t){
+            mp[a]--;
+            if(mp[a]<0) return false;
+        }
+        return true;
     }
 };

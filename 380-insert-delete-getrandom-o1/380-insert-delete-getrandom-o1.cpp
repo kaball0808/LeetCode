@@ -1,8 +1,7 @@
 class RandomizedSet {
-private:
+public:
     vector<int> temp;
     unordered_map<int,int> mp;
-public:
     RandomizedSet() {
 
     }

@@ -3,7 +3,6 @@ public:
     vector<int> temp;
     unordered_map<int,int> mp;
     RandomizedSet() {
-
     }
     
     bool insert(int val) {
@@ -28,7 +27,7 @@ public:
     }
     
     int getRandom() {
-        return temp[rand()%(temp.size())];
+        return temp[rand()%temp.size()];
     }
 };
 

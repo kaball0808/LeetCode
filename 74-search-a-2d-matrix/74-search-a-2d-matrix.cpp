@@ -7,7 +7,7 @@ public:
         while(i >-1 && j < n ){
             int cur = matrix[i][j];
             if(cur==target) return true;
-            if(cur>target) i--;
+            else if(cur>target) i--;
             else j++;
         }
         return false;
